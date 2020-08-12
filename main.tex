@@ -1,0 +1,50 @@
+\documentclass[11pt,openright,final]{unsa}
+
+\title{Titulo de la tesis}
+
+\author{Nombre completo del autor de la Tesis}%
+
+\examinerone{Prof. Dr. Nombre Apellido}{Presidente}%
+\examinertwo{Prof. Dr. Nombre Apellido}{Secretario}%
+\examinerthree{Prof. Dr. Nombre Apellido}{Integrante}%
+\examinerfour{Prof. Dr. Nombre Apellido}{Externo}{Universidad del ABC} 
+
+\date{19 de Junio del 2018}
+
+\dedicate{A Dios, por todo lo que me ha dado, a todos los profesores
+por sus enseñanzas y algunos amigos.}
+
+\begin{document}
+
+\makeFirstCover \makeSecondCover %
+
+\begin{frontmatter}
+\approved{\cuatro}%  {\tres} or {\cuatro}
+\dedicatory
+
+\begin{singlespace}
+\tableofcontents \listoffigures \listoftables \pagebreak
+\end{singlespace}
+
+\myAcknowledgements{contents/acknowledgements}%
+\myResumen{contents/resumen}%
+\myAbstract{contents/abstract}%
+\end{frontmatter}%
+
+\pagestyle{fancyplain}
+
+\include{contents/chapters/chapter1}
+\include{contents/chapters/chapter2}
+\include{contents/chapters/chapter3}
+\include{contents/chapters/chapter4}
+\include{contents/chapters/chapter5}
+
+% Apéndice
+%\myAppendix{contents/appendix}
+
+\begin{singlespace}
+\mybibliography{main}
+\bibliographystyle{acm}
+\end{singlespace}
+
+\end{document}
